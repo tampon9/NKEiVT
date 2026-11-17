@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Студенческий теннисный клуб — тренировки, турниры и новые знакомства.">
+  <title>Tennis Club — играй сильнее</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <!-- TODO: @Никита — проверь семантическую структуру и навигацию обеих страниц. -->
+  <input class="theme-toggle" type="checkbox" id="theme-home" aria-label="Включить тёмную тему">
+  <div class="site-shell">
+    <header class="header wrap">
+      <a class="brand" href="index.html" aria-label="Tennis Club — главная"><span class="brand-mark">T</span><span>TENNIS<br>CLUB</span></a>
+      <nav class="nav" aria-label="Основная навигация">
+        <a class="active" href="index.html">Главная</a><a href="#about">О клубе</a><a href="#events">Мероприятия</a><a href="schedule.html">Расписание</a><a href="#faq">FAQ</a>
+      </nav>
+      <div class="header-actions"><label class="theme-button" for="theme-home" title="Переключить тему">◐</label><a class="button button-small" href="#contact">Связаться <span>↗</span></a></div>
+    </header>
+
+    <main>
+      <section class="hero wrap">
+        <img class="hero-photo" src="assets/hero-tennis.png" alt="Теннисистка выполняет удар ракеткой на синем корте">
+        <div class="hero-shade"></div>
+        <div class="hero-content"><p class="eyebrow">СТУДЕНЧЕСКИЙ ТЕННИСНЫЙ КЛУБ</p><h1>PLAY<br><em>STRONG.</em></h1><p class="hero-subtitle">Играй смелее. Развивайся быстрее.<br>Находи свою команду.</p><a class="button" href="#about">Открыть для себя клуб <span>↓</span></a></div>
+        <div class="hero-stamp"><span>01 / 02</span><b>ИГРА. РАЗВИТИЕ.<br>КОМАНДА.</b></div>
+        <div class="hero-bottom"><span>EST. 2011</span><span>МОЯ ИГРА — МОИ ПРАВИЛА</span><span>51°30' N / 00°07' W</span></div>
+      </section>
+
+      <section class="ticker" aria-label="Направления клуба"><div class="ticker-track"><span>ТРЕНИРОВКИ <b>✳</b> КОМАНДНЫЙ ДУХ <b>✳</b> ТУРНИРЫ <b>✳</b> НОВЫЕ ВЫЗОВЫ <b>✳</b> МАСТЕР-КЛАССЫ <b>✳</b> РАЗВИТИЕ <b>✳</b></span><span aria-hidden="true">ТРЕНИРОВКИ <b>✳</b> КОМАНДНЫЙ ДУХ <b>✳</b> ТУРНИРЫ <b>✳</b> НОВЫЕ ВЫЗОВЫ <b>✳</b> МАСТЕР-КЛАССЫ <b>✳</b> РАЗВИТИЕ <b>✳</b></span></div></section>
+
+      <section class="section wrap about" id="about">
+        <div class="section-kicker"><span>01</span><span>О НАС</span><i></i><span>БОЛЬШЕ, ЧЕМ СПОРТ</span></div>
+        <div class="about-grid"><div><h2>BUILDING<br>CHAMPIONS ON<br>AND OFF THE COURT.</h2><p class="lead">Мы объединяем студентов, которые любят движение, честную игру и атмосферу настоящей команды.</p><p class="muted">Неважно, впервые ли ты держишь ракетку или уже готовишься к турниру. В клубе найдётся место для каждого: тренировки, мастер-классы, соревнования и люди, с которыми хочется побеждать.</p><a class="text-link" href="schedule.html">Посмотреть расписание <span>↗</span></a></div>
+          <div class="about-visual"><img src="assets/court-player-reference.jpg" alt="Теннисист на корте с ракеткой"><div class="visual-note"><span>CLUB<br>SPIRIT</span><b>500+</b><small>активных игроков</small></div></div>
+        </div>
+        <div class="stats"><div><strong>15<span>+</span></strong><small>лет на корте</small></div><div><strong>500<span>+</span></strong><small>участников клуба</small></div><div><strong>50<span>+</span></strong><small>событий каждый год</small></div><div><strong>2</strong><small>команды поддержки</small></div></div>
+      </section>
+
+      <section class="section events-section" id="events"><div class="wrap"><div class="section-kicker"><span>02</span><span>КАЛЕНДАРЬ КЛУБА</span><i></i><a href="schedule.html">ВСЕ СОБЫТИЯ ↗</a></div><div class="section-heading"><h2>UP NEXT<span>.</span></h2><p>Твой следующий шаг начинается здесь.<br>Выбирай событие и присоединяйся.</p></div>
+        <div class="event-grid home-events">
+          <article class="event-card event-feature"><a href="schedule.html#event1" class="event-image image-action"><img src="assets/doubles-match.jpg" alt="Парная игра на теннисном корте"><span class="tag">СПОРТ</span><span class="image-arrow">↗</span></a><div class="event-info"><span class="event-date">12 АПРЕЛЯ · 16:00</span><h3>Турнир «Весенний старт»</h3><p>Открой сезон и проверь свои силы на корте.</p><a href="schedule.html#event1" class="text-link">Подробнее ↗</a></div></article>
+          <article class="event-card"><a href="schedule.html#event2" class="event-image image-court"><img src="assets/serve-closeup.jpg" alt="Игрок готовится выполнить подачу"><span class="tag">ВОРКШОП</span><span class="image-arrow">↗</span></a><div class="event-info"><span class="event-date">18 АПРЕЛЯ · 15:00</span><h3>Мастер-класс подачи</h3><p>Работаем над техникой вместе с тренером.</p><a href="schedule.html#event2" class="text-link">Подробнее ↗</a></div></article>
+          <article class="event-card"><a href="schedule.html#event3" class="event-image image-ball"><img src="assets/team-celebration.jpg" alt="Команда теннисистов празднует победу"><span class="tag">ЛЕКЦИЯ</span><span class="image-arrow">↗</span></a><div class="event-info"><span class="event-date">22 АПРЕЛЯ · 17:30</span><h3>Психология победы</h3><p>Как сохранять концентрацию в важный момент.</p><a href="schedule.html#event3" class="text-link">Подробнее ↗</a></div></article>
+          <article class="event-card"><a href="schedule.html#event4" class="event-image image-action"><img src="assets/singles-rally.jpg" alt="Теннисист догоняет мяч во время розыгрыша"><span class="tag">СПОРТ</span><span class="image-arrow">↗</span></a><div class="event-info"><span class="event-date">03 МАЯ · 14:00</span><h3>Командный кубок</h3><p>Собери пару и сыграй за свою команду.</p><a href="schedule.html#event4" class="text-link">Подробнее ↗</a></div></article>
+          <article class="event-card"><a href="schedule.html#event5" class="event-image image-court"><img src="assets/court-player-reference.jpg" alt="Теннисист тренируется на корте"><span class="tag">ВОРКШОП</span><span class="image-arrow">↗</span></a><div class="event-info"><span class="event-date">10 МАЯ · 16:00</span><h3>Тренировка для новичков</h3><p>Знакомимся с игрой в комфортном темпе.</p><a href="schedule.html#event5" class="text-link">Подробнее ↗</a></div></article>
+          <article class="event-card"><a href="schedule.html#event6" class="event-image image-ball"><img src="assets/hero-jump-alternate.png" alt="Теннисистка выполняет динамичный удар"><span class="tag">СПОРТ</span><span class="image-arrow">↗</span></a><div class="event-info"><span class="event-date">17 МАЯ · 21:00</span><h3>Ночной теннис</h3><p>Играем под огнями корта и ловим лето.</p><a href="schedule.html#event6" class="text-link">Подробнее ↗</a></div></article>
+        </div></div></section>
+
+      <section class="contact-section wrap" id="contact"><div class="contact-copy"><span class="section-kicker light-kicker">03 / БУДЕМ НА СВЯЗИ</span><h2>READY TO<br>PLAY?</h2><p>Есть вопросы или хочешь стать частью клуба? Напиши нам.</p><a href="mailto:hello@tennisclub.example" class="contact-email">HELLO@TENNISCLUB.EXAMPLE ↗</a></div><form class="contact-form" action="mailto:hello@tennisclub.example" method="post" enctype="text/plain"><div class="form-title"><span>НАПИШИ НАМ</span><span>01 — 03</span></div><label for="name">ТВОЁ ИМЯ</label><input id="name" name="name" type="text" placeholder="Как к тебе обращаться?" minlength="2" required><label for="email">ЭЛЕКТРОННАЯ ПОЧТА</label><input id="email" name="email" type="email" placeholder="name@example.com" required><label for="message">СООБЩЕНИЕ</label><textarea id="message" name="message" placeholder="Расскажи, что тебя интересует..." minlength="10" required></textarea><button class="button" type="submit">Отправить сообщение <span>↗</span></button><small>Нажимая кнопку, ты соглашаешься на обработку указанных данных.</small></form></section>
+
+      <section class="section wrap faq" id="faq"><div class="section-kicker"><span>04</span><span>FAQ</span><i></i><span>ОТВЕТЫ НА ВОПРОСЫ</span></div><div class="faq-grid"><h2>GOOD TO<br>KNOW<span>.</span></h2><div class="faq-list"><details><summary>Нужен ли опыт игры в теннис?</summary><p>Нет! У нас есть занятия для новичков и для игроков с опытом. Поможем подобрать подходящую группу.</p></details><details><summary>Нужно ли своё оборудование?</summary><p>На первых тренировках можно воспользоваться инвентарём клуба. Уточни наличие при записи.</p></details><details><summary>Кто может вступить в клуб?</summary><p>Студенты, которым интересен теннис, движение и дружеская атмосфера.</p></details><details><summary>Как записаться на мероприятие?</summary><p>Открой страницу расписания, выбери событие и свяжись с организаторами через форму.</p></details></div></div></section>
+    </main>
+    <footer class="footer"><div class="wrap footer-inner"><a class="brand footer-brand" href="index.html"><span class="brand-mark">T</span><span>TENNIS<br>CLUB</span></a><span>ИГРА. РАЗВИТИЕ. КОМАНДА.</span><div class="footer-links"><a href="schedule.html">РАСПИСАНИЕ</a><a href="#about">О КЛУБЕ</a><a href="#contact">КОНТАКТЫ</a></div><small>© 2026 TENNIS CLUB</small></div></footer>
+  </div>
+</body>
+</html>
